@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+   <style>
+      *{
+         font-family: "Zilla Slab", sans-serif;
+         color: white; 
+         box-sizing: border-box;
+      }
+      body{
+         background: url("./bg.png");
+      }
+      .container{
+         padding: 0 20px;
+         width: 100%;
+      }
+      #blog-hero-text{
+         text-align: center; 
+         font-size: 40px;
+         
+      }
+      table{
+         width: 100%;
+         text-align: center;
+         border: px solid rgba(0, 255, 170, 0.733);
+         font-size: 25px;
+      
+      }
+      th,td{
+         border: 1px solid rgb(0, 255, 153);
+         padding: 5px;
+      }
+      #table-header{
+         text-align: center;
+         color:orangered;
+         letter-spacing: 2.5px;
+      }
+      #orderedList li{
+         font-size: 22px;
+      }
+   </style>
+</head>
+<body>
+   <header>
+       <h2 id="blog-hero-text">Our Blogs:</h2>
+       <!-- <h1 style="text-align: center ;"><a href="index.html" style="color: orangered;font-size: 35px; text-decoration:none; ;">Speed Test</a></h1> -->
+   </header>
+   <main>
+      <section class="container">  
+         <div id="table-container">
+            <h2 id="table-header">Differencenes between Local Storage and Session Storage:</h2>
+            <table >
+               <thead>
+                  <tr>
+                     <td>Point</td>
+                     <td>Local Storage</td>
+                     <td>Session Storage</td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Expires:</td>
+                     <td>Never expire.</td>
+                     <td>Expire  by closing tab  and browser.</td>
+                  </tr>
+                  <tr>
+                     <td>isSession Based: </td>
+                     <td>It's not session based. </td>
+                     <td>It's a session based storage.</td>
+                  </tr>
+                  <tr>
+                     <td>capacity: </td>
+                     <td>10mb </td>
+                     <td>5 mb</td>
+                  </tr>
+               </tbody>
+            </table>
+        </div>
+         <div id="table-container">
+            <h2 id="table-header">Difference between block scope and global:</h2>
+            <table >
+               <thead>
+                  <tr>
+                     <td>Block scope</td>
+                     <td>Global scope</td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Block variable  declare and assign into block or {}. </td>
+                     <td>Global scope variable declare on the global area. or outside of the function and block {}.</td>
+                  </tr>
+                  <tr>
+                     <td>Access only declared block</td>
+                     <td>Global variable is access from any where.</td>
+                  </tr>
+                  <tr>
+                     <td>If we want to access the variable out side of the block {} we get error.</td>
+                     <td>It can't not throw error because the variable is accessable from whole area.</td>
+                  </tr>
+               </tbody>
+            </table>
+        </div>
+         <!-- <div id="table-container">
+            <h2 id="table-header">How we can get undefined?
+            </h2>
+            <ol id="orderedList">
+               <li>variable that is not initialized gives undefined</li>
+               <li>function that return no value will gives undefined.</li>
+               <li>parameter that is not passed when calling</li>
+               <li>return has value on the right side gives undefined.</li>
+               <li>Property that not exits on an object gives undefined.</li>
+               <li>accessing array elements outside of the index range.</li>
+               <li>deleting an elements inside array</li>
+               <li>If set directly undefined.</li>
+            </ol>
+        </div> -->
+      </section>
+   </main>
+</body>
+</html>
